@@ -4,6 +4,7 @@
 
 A custom blog app with a content management system which allows you to easily manage blog posts include full markdown articles with author information, publication date, images, comments, and more!
 
+[Deployed Link](https://graphql-cms-blog-app.vercel.app/)
 ![screenshot](./images/10-screenshot.png "screenshot")
 
 ## Key technologies
