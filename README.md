@@ -4,6 +4,8 @@
 
 A custom blog app with a content management system which allows you to easily manage blog posts include full markdown articles with author information, publication date, images, comments, and more!
 
+![screenshot](./images/10-screenshot.png "screenshot")
+
 ## Key technologies
 
 - Node 14.17.3
@@ -196,7 +198,7 @@ Navigate to 'Project Settings' then 'API Access', Create permissions by toggling
 
 Then click 'create token', give it a name, enable all models
 
-![screenshot](./images/09-screenshot.png "Logo Title Text 1")
+![screenshot](./images/09-screenshot.png "screenshot")
 
 ### 7. You're all set
 
