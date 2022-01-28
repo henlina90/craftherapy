@@ -1,13 +1,10 @@
-# graphql_cms_blog_app
+# graphql_cms_blog_app (Craftherapy)
 
-## Description
+[Craftherapy](https://graphql-cms-blog-app.vercel.app/) is a custom blog app where you or your clients can easily manage blog posts. Features include full markdown articles with author information, publication date, featured images, comments, and more!
 
-A custom blog app with a content management system where you or your clients can easily manage blog posts. Features include full markdown articles with author information, publication date, featured images, comments, and more!
-
-[Deployed Link](https://graphql-cms-blog-app.vercel.app/)
 ![screenshot](./images/10-screenshot.png "screenshot")
 
-## Key technologies
+## Key Technologies
 
 - Node 14.17.3
 - NPM 6.14.13
@@ -17,9 +14,9 @@ A custom blog app with a content management system where you or your clients can
 - GraphCMS
 - Tailwind CSS
 
-## Project Setup
+## Dev Setup
 
-To get this project running locally, you'll need to have an an account with graphcms where you'll create your schema and use [graphcms](https://www.graphcms.com) endpoints to configure your environment variables.
+To get this project running locally, you'll need to create an account with [graphcms](https://www.graphcms.com) in which you'll create a schema and configure environment variables.
 
 ### 1. Getting started with GraphCMS
 
@@ -29,11 +26,12 @@ Next, create a new 'blank' project then input project name and description then 
 
 ### 2. Start creating your schema
 
-You'll be creating four models to your schema where each model will include a display name, API ID, and a Plural API ID.
+You'll be creating four models to your schema where each model will include a 'Display name', 'API ID', and a 'Plural API ID'.
 
 > Note: You will add multiple fields for each models accordingly.
 
-#### <b>Create "Author" Model</b>
+<Details>
+  <Summary>Create 'Author' Model</Summary>
 
 Display name: Author > API ID: Author > Plural API ID: Authors
 
@@ -56,7 +54,10 @@ Add fields:
   - Display name: Bio
   - API ID: bio
 
-#### <b>Create "Categories" Model</b>
+</Details>
+
+<Details>
+  <Summary>Create 'Categories' Model</Summary>
 
 Display name: Category > API ID: Category > Plural API ID: Categories
 
@@ -76,8 +77,10 @@ Add fields:
   - Slug options: Lowercase
   - Validations: Required, Unique
   - Match specific pattern dropdown: Slug
+</Details>
 
-#### <b>Create "Comment" Model</b>
+<Details>
+  <Summary>Create 'Comment' Model</Summary>
 
 Display name: Comment > API ID: Comment > Plural API ID: Comments
 
@@ -101,8 +104,11 @@ Add fields:
   - Display name: Comment
   - API ID: comment
   - Validations: Required
+  
+</Details>
 
-#### <b>Create "Post" Model</b>
+<Details>
+  <Summary>Create 'Post' Model</Summary>
 
 Display name: Post > API ID: Post > Plural API ID: Posts
 
@@ -141,11 +147,14 @@ Add fields:
   - API ID: featuredImage
   - Validations: Required
 
-#### <b>Adding references to models</b>
+</Details>
 
-You'll wrap up the schema by adding references fields to each model.
+<Details>
+  <Summary>Adding 'References' to Models</Summary>
 
-> There are multiple references fields for the Post model.
+You'll wrap up the schema by adding references fields to **each** model.
+
+> Note: There are multiple references fields for the 'Post' model.
 
 - Author -
 
@@ -188,16 +197,18 @@ You'll wrap up the schema by adding references fields to each model.
   - Model to reference: Comment
   - Reference directions: Two-way reference
   - Relation cardinality: Allow multiple Comments per Post
+  
+</Details>
 
 ### 3. Create a post
 
-Navigate to 'Content' icon, click 'Create item', complete the fields and publish your new post!
+Navigate to 'Content' icon, click 'Create item', complete the fields and publish your first post!
 
 ### 6. Accessing Graph CMS Endpoints
 
 Navigate to 'Project Settings' then 'API Access', Create permissions by toggling the 'Read' all models and publish
 
-Then click 'create token', give it a name, enable all models
+Then click 'Create Token', give it a name, enable all models
 
 ![screenshot](./images/09-screenshot.png "screenshot")
 
@@ -210,7 +221,7 @@ You've completed your graphcms schema, created a post, enabled permissions, and 
 1. Fork or clone this repository
 2. `cd graphql_cms_blog_app`
 3. `npm install`
-4. Create new file for environment variables `touch .env`
+4. Create new .env file, run `touch .env`
 
 ```
 // grab the Content API endpoint URL
