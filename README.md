@@ -1,4 +1,4 @@
-# graphql_cms_blog_app (Craftherapy)
+# Craftherapy
 
 [Craftherapy](https://graphql-cms-blog-app.vercel.app/) is a custom blog app where you or your clients can easily manage blog posts. Features include full markdown articles with author information, publication date, featured images, comments, and more!
 
@@ -219,7 +219,7 @@ You've completed your graphcms schema, created a post, enabled permissions, and 
 ## Installation
 
 1. Fork or clone this repository
-2. `cd graphql_cms_blog_app`
+2. `cd craftherapy`
 3. `npm install`
 4. Create new .env file, run `touch .env`
 
