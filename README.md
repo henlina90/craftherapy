@@ -1,4 +1,4 @@
-# Craftherapy
+# Craftherapy - Custom Blog App
 
 [Craftherapy](https://graphql-cms-blog-app.vercel.app/) is a custom blog app where you or your clients can easily manage blog posts. Features include full markdown articles with author information, publication date, featured images, comments, and more!
 
