@@ -4,15 +4,34 @@
 
 ![screenshot](./images/10-screenshot.png "screenshot")
 
+
+## Highlights
+
+- Full markdown content
+- Articles with images
+- Featured post carousel
+- Recent posts widget
+- Tags and categories
+- Author information
+- Moderated user comments
+
 ## Key Technologies
 
 - Node 14.17.3
 - NPM 6.14.13
 - React.js
-- Next.js
+- Next.js 
 - GraphQL
 - GraphCMS
 - Tailwind CSS
+
+## Overview
+- Built with React 
+- Nextjs pre-rendering with static generation 
+- Created modern user interface using Tailwind CSS
+- Created schemas and models with GraphQL 
+- Uses GraphQL Queries to retrieve data
+- GraphCMS for content management system
 
 ## Dev Setup
 
