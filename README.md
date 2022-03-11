@@ -1,19 +1,8 @@
 # Craftherapy - Custom Blog App
 
-[Craftherapy](https://graphql-cms-blog-app.vercel.app/) is a custom blog app where you or your clients can easily manage blog posts. Features include full markdown articles with author information, publication date, featured images, comments, and more!
+[Craftherapy](https://graphql-cms-blog-app.vercel.app/) is a custom blog app where you or your clients can easily manage blog posts. Features include full markdown articles, featured post carousel, comment moderation and more!
 
 ![screenshot](./images/10-screenshot.png "screenshot")
-
-
-## Highlights
-
-- Full markdown content
-- Articles with images
-- Featured post carousel
-- Recent posts widget
-- Tags and categories
-- Author information
-- Moderated user comments
 
 ## Key Technologies
 
@@ -39,11 +28,27 @@ To get this project running locally, you'll need to create an account with [grap
 
 ### 1. Getting started with GraphCMS
 
-Go to [www.graphcms.com](https://www.graphcms.com) to create an account for free.
+The onboarding process for GraphCMS is quite simple and user-friendly.
 
-Next, create a new 'blank' project then input project name and description then select region.
+First, you’ll need to create an account with GraphCMS if you don’t have one already:
+
+* Go to https://app.graphcms.com/signup to create a free-forever account.
+
+* After the account creation process, log in to your dashboard and click Create a new project from scratch.
+
+* Enter a name and short description for your project. A good name might be “Blog CMS Using React, GraphQL and GraphCMS".
+
+* Select a region on the map to have your content served from and click Create Project. For optimal results loading your content, choose the region that is nearest your location (or the likely location of your audience).
+
+* Select the Free Forever plan to proceed. Of course, you can choose a paid plan later if you need it.
 
 ### 2. Start creating your schema
+
+In the sidebar menu, click Schema to continue.
+
+The Schema page allows us to layout out our content and add/customize fields for our content.
+
+The sidebar to the right provides different field types for the different data we need to store about our posts.
 
 You'll be creating four models to your schema where each model will include a 'Display name', 'API ID', and a 'Plural API ID'.
 
