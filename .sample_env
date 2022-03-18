@@ -1,0 +1,2 @@
+NEXT_PUBLIC_GRAPHCMS_ENDPOINT="content-api-endpoint-url"
+GRAPHCMS_TOKEN="permanent-auth-tokens-value"

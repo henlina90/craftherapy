@@ -1,33 +1,33 @@
-import React, { useState, useEffect } from 'react'
-import moment from 'moment';
-import Link from 'next/link'
+import React, { useState, useEffect } from "react";
+import moment from "moment";
+import Link from "next/link";
 
-import { getRecentPosts, getSimilarPosts } from '../services';
+import { getRecentPosts, getSimilarPosts } from "../services";
 
 // Recent or related posts widget
 const PostWidget = ({ categories, slug }) => {
   const [relatedPosts, setRelatedPosts] = useState([]);
 
   useEffect(() => {
-    if(slug) {
-      getSimilarPosts(categories, slug)
-      .then((result) => setRelatedPosts(result))
+    if (slug) {
+      getSimilarPosts(categories, slug).then((result) =>
+        setRelatedPosts(result)
+      );
     } else {
-      getRecentPosts()
-        .then((result) => setRelatedPosts(result))
+      getRecentPosts().then((result) => setRelatedPosts(result));
     }
-  }, [slug])
+  }, [slug]);
 
-  console.log(relatedPosts)
+  console.log(relatedPosts);
 
   return (
-    <div className="p-8 mb-4 border bg-gray-50 rounded-lg">
-      <h3 className="text-xl uppercase mb-2 font-semibold pb-2">
-        {slug ? 'Related Posts' : "Recent Posts" }
+    <div className="p-8 mb-4 bg-white rounded-lg shadow-md">
+      <h3 className="text-xl mb-2 font-semibold pb-2">
+        {slug ? "Related Posts" : "Recent Posts"}
       </h3>
       {relatedPosts.map((post) => (
         <div key={post.title} className="flex items-center w-full mb-1">
-            {/* <div className="w-16 flex-none">
+          {/* <div className="w-16 flex-none">
               <img
                 alt={post.title}
                 height="60px"
@@ -36,18 +36,22 @@ const PostWidget = ({ categories, slug }) => {
                 src={post.featuredImage.url}
                 />
               </div> */}
-              <div className="flex-grow mb-2">
-                  <p className="text-gray-500 text-light text-sm">
-                    {moment(post.createdAt).format('MMM DD, YYYY')}
-                  </p>
-                  <Link href={`/post/${post.slug}`} key={post.title} className="text-md">
-                    {post.title}
-                  </Link>
-                </div>
-            </div>
+          <div className="flex-grow mb-2">
+            <p className="text-neutral-500 uppercase text-light text-sm">
+              {moment(post.createdAt).format("MMM DD, YYYY")}
+            </p>
+            <Link
+              href={`/post/${post.slug}`}
+              key={post.title}
+              className="text-md"
+            >
+              {post.title}
+            </Link>
+          </div>
+        </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default PostWidget
+export default PostWidget;
