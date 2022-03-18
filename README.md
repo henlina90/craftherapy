@@ -2,7 +2,7 @@
 
 [Craftherapy](https://graphql-cms-blog-app.vercel.app/) is a custom blog app where you or your clients can easily manage blog posts. Features include full markdown articles, featured post carousel, comment moderation and more!
 
-![screenshot](./images/10-screenshot.png "screenshot")
+![screenshot](./images/screenshot.png "screenshot")
 
 ## Key Technologies
 
